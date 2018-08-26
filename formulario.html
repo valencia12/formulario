@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Informacion Personal</title>
 </head>
 <body>
-    
+    <form method="POST" action="">
+    <section>
+      <article>
+        <fieldset>
+            <legend>Categoria personal</legend>
+            <label>Nombre: </label><input type="text" placeholder="nombre" pattern="[Aa-az]" >
+            <br>
+            <br>
+            <label>Fecha de nacimiento:</label> <input type="date">
+            <br>
+            <br>
+            <label>Animal Favorito:</label> <input type="text" placeholder="Animal favorito" pattern="[Aa-az]"  >
+        </fieldset>
+     </article> 
+     <article>
+         <fieldset>
+             <legend>Datos de cuenta:</legend>
+             <br>
+             <br>
+            <label>Email:</label><input type="text" required pattern="[A-Za-z0-9]+" >
+            <br>
+            <br>
+            <label>password:</label><input type="password" required pattern="[A-Za-z0-9]+ ">
+            <br>
+            <br>
+            <label>repetir contraseña: </label><input type="password"required pattern="[A-Za-z0-9]+" >
+         </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend>Contacto</legend>
+                <label>Direccion</label><input type="text" required pattern="[A-Za-z0-9]+">
+                <br>
+                <br>
+                <label>Ciudad</label><input type="text" pattern="[Aa-az]" >
+                <br>
+                <br>
+                <label>Numero de telefono</label><input type="text" pattern="[0-9]{8}">
+            </fieldset>
+         </article>
+         
+    </section>
+    <input type="submit" value="enviar">
+    </form>
+    <footer>
+        
+            <p>Jorge Gustavo Miranda Valencia</p>
+            <p>00003417</p>
+        </footer>
 </body>
 </html>
